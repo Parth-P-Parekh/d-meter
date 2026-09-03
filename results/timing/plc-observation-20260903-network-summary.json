@@ -1,0 +1,68 @@
+{
+  "schema_version": "pcapng-network-summary-1.0",
+  "capture": "results\\timing\\plc-observation-20260903.pcapng",
+  "scope": "Single Admin-PC capture. TCP handshake figures are observed round trips; payload timing does not establish one-way network latency.",
+  "tcp_packets_parsed": 0,
+  "channels": {
+    "admin_pc_to_sima_http": {
+      "peer": "192.168.1.20",
+      "port": 5001,
+      "captured_packets": 0,
+      "observed_connections": 0,
+      "observed_unidirectional_flows": 0,
+      "captured_payload_bytes": {},
+      "tcp_handshake_round_trip": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      },
+      "payload_transfer_span_at_pc": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      }
+    },
+    "admin_pc_to_sima_scp": {
+      "peer": "192.168.1.20",
+      "port": 22,
+      "captured_packets": 0,
+      "observed_connections": 0,
+      "observed_unidirectional_flows": 0,
+      "captured_payload_bytes": {},
+      "tcp_handshake_round_trip": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      },
+      "payload_transfer_span_at_pc": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      }
+    },
+    "admin_pc_to_plc_modbus": {
+      "peer": "192.168.1.7",
+      "port": 502,
+      "captured_packets": 0,
+      "observed_connections": 0,
+      "observed_unidirectional_flows": 0,
+      "captured_payload_bytes": {},
+      "tcp_handshake_round_trip": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      },
+      "payload_transfer_span_at_pc": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      }
+    }
+  }
+}

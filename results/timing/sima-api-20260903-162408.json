@@ -1,0 +1,321 @@
+{
+  "schema_version": "sima-api-timing-1.0",
+  "measurement": "Admin-PC HTTP POST /run_inference round-trip; includes server polling, parsing, report generation, response transfer, and client overhead. It is not MLA-only inference time.",
+  "endpoint": "http://192.168.1.20:5001/run_inference",
+  "started_utc": "2026-09-03T10:53:24.239701Z",
+  "completed_utc": "2026-09-03T10:54:08.502758Z",
+  "requested_calls": 30,
+  "successful_http_200_calls": 30,
+  "summary": {
+    "count": 30,
+    "min_ms": 563.802,
+    "median_ms": 685.304,
+    "p95_ms": 2189.626,
+    "p99_ms": 2379.584,
+    "max_ms": 2444.465,
+    "mean_ms": 991.647,
+    "stdev_ms": 590.228
+  },
+  "calls": [
+    {
+      "sequence": 1,
+      "started_utc": "2026-09-03T10:53:24.239701Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:25.056107Z",
+      "round_trip_ms": 815.616
+    },
+    {
+      "sequence": 2,
+      "started_utc": "2026-09-03T10:53:25.556659Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:28.000498Z",
+      "round_trip_ms": 2444.465
+    },
+    {
+      "sequence": 3,
+      "started_utc": "2026-09-03T10:53:28.501730Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:29.176196Z",
+      "round_trip_ms": 675.219
+    },
+    {
+      "sequence": 4,
+      "started_utc": "2026-09-03T10:53:29.677367Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:30.242041Z",
+      "round_trip_ms": 564.917
+    },
+    {
+      "sequence": 5,
+      "started_utc": "2026-09-03T10:53:30.742825Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:31.425024Z",
+      "round_trip_ms": 683.066
+    },
+    {
+      "sequence": 6,
+      "started_utc": "2026-09-03T10:53:31.926205Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:34.047511Z",
+      "round_trip_ms": 2121.344
+    },
+    {
+      "sequence": 7,
+      "started_utc": "2026-09-03T10:53:34.548076Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:35.469650Z",
+      "round_trip_ms": 922.339
+    },
+    {
+      "sequence": 8,
+      "started_utc": "2026-09-03T10:53:35.970978Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:36.894883Z",
+      "round_trip_ms": 923.962
+    },
+    {
+      "sequence": 9,
+      "started_utc": "2026-09-03T10:53:37.395048Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:38.202131Z",
+      "round_trip_ms": 807.459
+    },
+    {
+      "sequence": 10,
+      "started_utc": "2026-09-03T10:53:38.703172Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:39.979902Z",
+      "round_trip_ms": 1277.437
+    },
+    {
+      "sequence": 11,
+      "started_utc": "2026-09-03T10:53:40.481082Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:41.329346Z",
+      "round_trip_ms": 849.106
+    },
+    {
+      "sequence": 12,
+      "started_utc": "2026-09-03T10:53:41.830828Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:42.505661Z",
+      "round_trip_ms": 675.639
+    },
+    {
+      "sequence": 13,
+      "started_utc": "2026-09-03T10:53:43.006687Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:43.581454Z",
+      "round_trip_ms": 575.024
+    },
+    {
+      "sequence": 14,
+      "started_utc": "2026-09-03T10:53:44.082382Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:46.233984Z",
+      "round_trip_ms": 2151.6
+    },
+    {
+      "sequence": 15,
+      "started_utc": "2026-09-03T10:53:46.734524Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:47.558310Z",
+      "round_trip_ms": 824.205
+    },
+    {
+      "sequence": 16,
+      "started_utc": "2026-09-03T10:53:48.059350Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:48.622926Z",
+      "round_trip_ms": 563.802
+    },
+    {
+      "sequence": 17,
+      "started_utc": "2026-09-03T10:53:49.123474Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:49.800466Z",
+      "round_trip_ms": 677.537
+    },
+    {
+      "sequence": 18,
+      "started_utc": "2026-09-03T10:53:50.301635Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:52.072004Z",
+      "round_trip_ms": 1770.373
+    },
+    {
+      "sequence": 19,
+      "started_utc": "2026-09-03T10:53:52.572223Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:53.246087Z",
+      "round_trip_ms": 673.951
+    },
+    {
+      "sequence": 20,
+      "started_utc": "2026-09-03T10:53:53.746411Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:54.319983Z",
+      "round_trip_ms": 574.595
+    },
+    {
+      "sequence": 21,
+      "started_utc": "2026-09-03T10:53:54.821405Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:55.492760Z",
+      "round_trip_ms": 671.898
+    },
+    {
+      "sequence": 22,
+      "started_utc": "2026-09-03T10:53:55.993498Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:58.214169Z",
+      "round_trip_ms": 2220.739
+    },
+    {
+      "sequence": 23,
+      "started_utc": "2026-09-03T10:53:58.714598Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:53:59.401884Z",
+      "round_trip_ms": 687.542
+    },
+    {
+      "sequence": 24,
+      "started_utc": "2026-09-03T10:53:59.902512Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:54:00.683169Z",
+      "round_trip_ms": 781.035
+    },
+    {
+      "sequence": 25,
+      "started_utc": "2026-09-03T10:54:01.183929Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:54:01.758441Z",
+      "round_trip_ms": 574.763
+    },
+    {
+      "sequence": 26,
+      "started_utc": "2026-09-03T10:54:02.258975Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:54:04.134255Z",
+      "round_trip_ms": 1875.505
+    },
+    {
+      "sequence": 27,
+      "started_utc": "2026-09-03T10:54:04.635086Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:54:05.206412Z",
+      "round_trip_ms": 572.201
+    },
+    {
+      "sequence": 28,
+      "started_utc": "2026-09-03T10:54:05.707977Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:54:06.371998Z",
+      "round_trip_ms": 664.435
+    },
+    {
+      "sequence": 29,
+      "started_utc": "2026-09-03T10:54:06.872950Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:54:07.438254Z",
+      "round_trip_ms": 565.794
+    },
+    {
+      "sequence": 30,
+      "started_utc": "2026-09-03T10:54:07.939009Z",
+      "http_status": 200,
+      "response_bytes": 18,
+      "service_status": "ok",
+      "detection_count": 0,
+      "completed_utc": "2026-09-03T10:54:08.502758Z",
+      "round_trip_ms": 563.838
+    }
+  ]
+}

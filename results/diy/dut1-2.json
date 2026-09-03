@@ -1,0 +1,153 @@
+{
+  "artifacts": {
+    "overlay": "/runs/9f1f315f6b2c4acf87bf306a7392b0ae/overlay",
+    "result": "/runs/9f1f315f6b2c4acf87bf306a7392b0ae/result"
+  },
+  "detections": [
+    {
+      "box_model": {
+        "height": 282.0,
+        "width": 308.0,
+        "x": 161.0,
+        "y": 218.0
+      },
+      "box_source": {
+        "height": 564.0,
+        "width": 616.0,
+        "x": 322.0,
+        "y": 156.0
+      },
+      "class_name": "candidate",
+      "confidence": 1.0,
+      "polarity": "high-contrast-component"
+    },
+    {
+      "box_model": {
+        "height": 18.0,
+        "width": 113.0,
+        "x": 282.0,
+        "y": 195.0
+      },
+      "box_source": {
+        "height": 36.0,
+        "width": 226.0,
+        "x": 564.0,
+        "y": 110.0
+      },
+      "class_name": "candidate",
+      "confidence": 0.030713,
+      "polarity": "high-contrast-component"
+    },
+    {
+      "box_model": {
+        "height": 12.0,
+        "width": 14.0,
+        "x": 445.0,
+        "y": 332.0
+      },
+      "box_source": {
+        "height": 24.0,
+        "width": 28.0,
+        "x": 890.0,
+        "y": 384.0
+      },
+      "class_name": "candidate",
+      "confidence": 0.003467,
+      "polarity": "high-contrast-component"
+    },
+    {
+      "box_model": {
+        "height": 11.0,
+        "width": 14.0,
+        "x": 445.0,
+        "y": 462.0
+      },
+      "box_source": {
+        "height": 22.0,
+        "width": 28.0,
+        "x": 890.0,
+        "y": 644.0
+      },
+      "class_name": "candidate",
+      "confidence": 0.00332,
+      "polarity": "high-contrast-component"
+    },
+    {
+      "box_model": {
+        "height": 12.0,
+        "width": 14.0,
+        "x": 170.0,
+        "y": 334.0
+      },
+      "box_source": {
+        "height": 24.0,
+        "width": 28.0,
+        "x": 340.0,
+        "y": 388.0
+      },
+      "class_name": "candidate",
+      "confidence": 0.003296,
+      "polarity": "high-contrast-component"
+    },
+    {
+      "box_model": {
+        "height": 11.0,
+        "width": 14.0,
+        "x": 171.0,
+        "y": 462.0
+      },
+      "box_source": {
+        "height": 22.0,
+        "width": 28.0,
+        "x": 342.0,
+        "y": 644.0
+      },
+      "class_name": "candidate",
+      "confidence": 0.003149,
+      "polarity": "high-contrast-component"
+    },
+    {
+      "box_model": {
+        "height": 5.0,
+        "width": 22.0,
+        "x": 385.0,
+        "y": 299.0
+      },
+      "box_source": {
+        "height": 10.0,
+        "width": 44.0,
+        "x": 770.0,
+        "y": 318.0
+      },
+      "class_name": "candidate",
+      "confidence": 0.0021,
+      "polarity": "high-contrast-component"
+    }
+  ],
+  "frame_id": "dut1-2",
+  "image": {
+    "height": 720,
+    "name": "2.png",
+    "sha256": "914a214cb7fd474364678cca739b4f2801f8eb4f5b00cd0ece96db32cf6acf41",
+    "width": 1280
+  },
+  "model_version": "opencv-contour-candidate-v1",
+  "pipeline_version": "0.1.0",
+  "run_id": "9f1f315f6b2c4acf87bf306a7392b0ae",
+  "schema_version": "1.0",
+  "timings_ms": {
+    "total": 15.585
+  },
+  "transform": {
+    "model_height": 640,
+    "model_width": 640,
+    "pad_bottom": 140,
+    "pad_left": 0,
+    "pad_right": 0,
+    "pad_top": 140,
+    "resize_scale_x": 0.5,
+    "resize_scale_y": 0.5,
+    "source_height": 720,
+    "source_width": 1280
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "artifacts": {
+    "overlay": "/runs/13cd91ae81014835bc69570c02107d8d/overlay",
+    "result": "/runs/13cd91ae81014835bc69570c02107d8d/result"
+  },
+  "detections": [
+    {
+      "box_model": {
+        "height": 330.0,
+        "width": 269.0,
+        "x": 155.0,
+        "y": 235.0
+      },
+      "box_source": {
+        "height": 4.125,
+        "width": 3.3625,
+        "x": 1.9375,
+        "y": 2.9375
+      },
+      "class_name": "candidate",
+      "confidence": 1.0,
+      "polarity": "high-contrast-component"
+    }
+  ],
+  "frame_id": "windows-smoke",
+  "image": {
+    "height": 8,
+    "name": "synthetic.ppm",
+    "sha256": "adf58b7bf7f739c82dd657e0b78a1a7145dcc2fc16a42c319b26b0dc838c39d3",
+    "width": 8
+  },
+  "model_version": "opencv-contour-candidate-v1",
+  "pipeline_version": "0.1.0",
+  "run_id": "13cd91ae81014835bc69570c02107d8d",
+  "schema_version": "1.0",
+  "timings_ms": {
+    "total": 14.546
+  },
+  "transform": {
+    "model_height": 640,
+    "model_width": 640,
+    "pad_bottom": 0,
+    "pad_left": 0,
+    "pad_right": 0,
+    "pad_top": 0,
+    "resize_scale_x": 80.0,
+    "resize_scale_y": 80.0,
+    "source_height": 8,
+    "source_width": 8
+  }
+}

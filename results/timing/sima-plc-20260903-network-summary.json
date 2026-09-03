@@ -1,0 +1,74 @@
+{
+  "schema_version": "pcapng-network-summary-1.0",
+  "capture": "results\\timing\\sima-plc-20260903.pcapng",
+  "scope": "Single Admin-PC capture. TCP handshake figures are observed round trips; payload timing does not establish one-way network latency.",
+  "tcp_packets_parsed": 15149,
+  "channels": {
+    "admin_pc_to_sima_http": {
+      "peer": "192.168.1.20",
+      "port": 5001,
+      "captured_packets": 246,
+      "observed_connections": 30,
+      "observed_unidirectional_flows": 60,
+      "captured_payload_bytes": {
+        "pc_to_peer": 1827,
+        "peer_to_pc": 5490
+      },
+      "tcp_handshake_round_trip": {
+        "count": 14,
+        "min_ms": 0.13,
+        "median_ms": 0.162,
+        "max_ms": 1.04
+      },
+      "payload_transfer_span_at_pc": {
+        "count": 30,
+        "min_ms": 8.963,
+        "median_ms": 10.38,
+        "max_ms": 1733.738
+      }
+    },
+    "admin_pc_to_sima_scp": {
+      "peer": "192.168.1.20",
+      "port": 22,
+      "captured_packets": 14903,
+      "observed_connections": 30,
+      "observed_unidirectional_flows": 60,
+      "captured_payload_bytes": {
+        "peer_to_pc": 16939560,
+        "pc_to_peer": 49260
+      },
+      "tcp_handshake_round_trip": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      },
+      "payload_transfer_span_at_pc": {
+        "count": 30,
+        "min_ms": 56.633,
+        "median_ms": 345.12,
+        "max_ms": 488.265
+      }
+    },
+    "admin_pc_to_plc_modbus": {
+      "peer": "192.168.1.7",
+      "port": 502,
+      "captured_packets": 0,
+      "observed_connections": 0,
+      "observed_unidirectional_flows": 0,
+      "captured_payload_bytes": {},
+      "tcp_handshake_round_trip": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      },
+      "payload_transfer_span_at_pc": {
+        "count": 0,
+        "min_ms": null,
+        "median_ms": null,
+        "max_ms": null
+      }
+    }
+  }
+}
