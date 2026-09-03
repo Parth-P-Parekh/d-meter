@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0",
+  "pipeline_name": "wood-parity-demo",
+  "pipeline_version": "0.1.0",
+  "purpose": "offline shadow-only reproduction of the compiled Wood pipeline",
+  "input": {
+    "width": 1280,
+    "height": 720,
+    "pixel_format": "NV12"
+  },
+  "demo_source": {
+    "mode": "recorded-image-upload",
+    "production_wrapper_source": {
+      "pixel_format": "RGB",
+      "width": 3200,
+      "height": 2256
+    },
+    "source_to_pipeline_input": {
+      "operation": "forced-resize",
+      "width": 1280,
+      "height": 720,
+      "padding": "none"
+    }
+  },
+  "preprocessing": {
+    "model_width": 640,
+    "model_height": 640,
+    "colour_order": "RGB",
+    "resize": "bilinear",
+    "preserve_aspect_ratio": true,
+    "padding": {
+      "placement": "center",
+      "colour": [0, 0, 0]
+    },
+    "normalization": {
+      "mean": [0, 0, 0],
+      "standard_deviation": [1, 1, 1]
+    },
+    "quantization": {
+      "data_type": "int8",
+      "scale_approximation": 255,
+      "zero_point": -128
+    }
+  },
+  "postprocessing": {
+    "confidence_threshold": 0.1,
+    "nms_iou_threshold": 0.3,
+    "max_detections": 100,
+    "classes": ["ChipOff", "Major", "Minor"]
+  },
+  "prohibited_integrations": ["PLC", "camera", "SQL", "MES", "production-board-service"]
+}

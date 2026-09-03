@@ -1,0 +1,53 @@
+{
+  "schema_version": "1.1",
+  "frame_id": "wood-0001",
+  "pipeline_version": "wood-production-baseline-unknown",
+  "model_version": "wood-model-unknown",
+  "image": {
+    "path": "images/wood-0001.png",
+    "sha256": "replace-with-lowercase-sha256",
+    "width": 1280,
+    "height": 720
+  },
+  "transform": {
+    "source_to_input": {
+      "source_width": 3200,
+      "source_height": 2256,
+      "input_width": 1280,
+      "input_height": 720,
+      "resize_scale_x": 0.4,
+      "resize_scale_y": 0.3191489361702128,
+      "pad_left": 0.0,
+      "pad_top": 0.0,
+      "pad_right": 0.0,
+      "pad_bottom": 0.0
+    },
+    "input_to_model": {
+      "source_width": 1280,
+      "source_height": 720,
+      "model_width": 640,
+      "model_height": 640,
+      "resize_scale_x": 0.5,
+      "resize_scale_y": 0.5,
+      "pad_left": 0.0,
+      "pad_top": 140.0,
+      "pad_right": 0.0,
+      "pad_bottom": 140.0
+    }
+  },
+  "detections": [
+    {
+      "class_name": "Major",
+      "confidence": 0.81,
+      "box_model": {"x": 50.0, "y": 190.0, "width": 100.0, "height": 50.0},
+      "box_input": {"x": 100.0, "y": 100.0, "width": 200.0, "height": 100.0},
+      "box_display": {"x": 250.0, "y": 313.3333333333333, "width": 500.0, "height": 313.3333333333333}
+    }
+  ],
+  "timings_ms": {
+    "preprocessing": 0.0,
+    "inference": 0.0,
+    "postprocessing": 0.0,
+    "total": 0.0
+  }
+}

@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+results/
+assets/wood/bundle-manifest.json
+assets/wood/model/
+assets/wood/calibration/
+assets/wood/reference/
+data/corpus/manifest.json
+data/corpus/images/
+data/corpus/baselines/
