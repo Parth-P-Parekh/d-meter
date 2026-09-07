@@ -1,0 +1,52 @@
+pipeline_name: yolo26n_coco
+project_path: /home/docker/sima-cli/yolo26_modalix
+
+model_params:
+  model_path: /home/docker/sima-cli/yolo26_modalix/artifacts/model/yolo26n.onnx
+  # The generic packaging stage uses this as an artifact stem. The experiment
+  # deliberately does not select a YOLOv8 surgeon or box decoder.
+  model_name: yolo26n
+  post_surgery_model_path: /home/docker/sima-cli/yolo26_modalix/artifacts/model/yolo26n.onnx
+  model_type: object-detection
+  input_width: 1280
+  input_height: 720
+
+extras:
+  no_box_decode: true
+  rtsp_src:
+  host_ip:
+  host_port:
+  input_resource:
+  detection_threshold: 0.1
+  nms_iou_threshold: 0.3
+  topk: 100
+  labels_file: /home/docker/sima-cli/yolo26_modalix/build_workspace/coco80.txt
+  num_classes: 80
+
+compilation_params:
+  compilation_result_dir: /home/docker/sima-cli/yolo26_modalix/build_workspace/result
+  compiler: yolo
+  batch_size: 1
+  device_type: modalix
+  calibration_params:
+    calibration_data_path: /home/docker/sima-cli/yolo26_modalix/corpus/calibration/images
+    calibration_ds_extn: png
+    calibration_samples_count: 100
+    calibration_type: min_max
+  quant_config:
+    arm_only: false
+    activation_quant_config:
+      act_asym: true
+      act_per_ch: false
+      act_bf16: false
+      act_nbits: 8
+    weight_quant_config:
+      wt_asym: false
+      wt_per_ch: true
+      wt_bf16: false
+      wt_nbits: 8
+    bias_correction: none
+    ceq: false
+    smooth_quant: false
+    mode: sima
+    compress: false

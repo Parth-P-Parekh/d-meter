@@ -1,0 +1,15 @@
+.venv/
+artifacts/model/*.pt
+artifacts/model/*.onnx
+artifacts/package/*.mpk
+artifacts/package/*.tar.gz
+artifacts/logs/
+build_workspace/vendor/
+build_workspace/result/
+corpus/calibration/images/
+corpus/evaluation/images/
+corpus/evaluation/reference/
+results/
+__pycache__/
+*.py[cod]
+
