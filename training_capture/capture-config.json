@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "camera": {
+    "name": "Basler-a2A4504-5gcBAS-40735904",
+    "model": "a2A4504-5gcBAS",
+    "serial": "40735904",
+    "width": 3200,
+    "height": 2256,
+    "offset_x": 656,
+    "offset_y": 1648,
+    "pixel_format": "RGB",
+    "exposure_us": 100000,
+    "gain": 0,
+    "acquisition_mode": "free_running",
+    "allow_free_running_fallback": false,
+    "warmup_frames": 3
+  },
+  "safety": {
+    "blocked_process_patterns": [
+      "PowerBoard_Screws.py",
+      "/home/sima/BITSNew_ui/"
+    ],
+    "blocked_local_ports": [5001],
+    "minimum_free_bytes": 1073741824
+  },
+  "storage": {
+    "local_root": "/home/sima/training-capture/outbox",
+    "png_compression": 3
+  },
+  "transfer": {
+    "admin_host": "192.168.1.17",
+    "admin_user": "Admin",
+    "admin_root": "C:/Users/Admin/TrainingImages/PowerBoard",
+    "connect_timeout_seconds": 5
+  }
+}

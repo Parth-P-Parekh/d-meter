@@ -1,0 +1,43 @@
+--- PowerBoard_simaaisrc.py
++++ PowerBoard_simaaisrc.py
+@@ -16,6 +16,7 @@
+ 
+ from flask import Flask, render_template, Response, jsonify
+ from queue import Queue, Empty
++from training_capture_spool import TrainingCaptureSpool
+ 
+ 
+ # ============================================================
+@@ -61,6 +62,8 @@
+ # ============================================================
+ 
+ app = Flask(__name__)
++training_capture_spool = TrainingCaptureSpool(os.path.basename(__file__))
++training_capture_spool.register_routes(app)
+ 
+ CAMERA_NAME = "Basler-a2A4504-5gcBAS-40735904"
+ 
+@@ -357,6 +360,10 @@
+ 
+     frame = shared_pipeline.get_current_frame()
+ 
++    if frame is None:
++        return jsonify({'status': 'no camera frame available'}), 503
++    training_capture = training_capture_spool.prepare(frame)
++
+     processor = InferenceProcessor()
+ 
+     bbox_file = processor.wait_for_new_bbox_file()
+@@ -448,7 +455,11 @@
+ 
+     copy_to_host(frame_path, crop_paths)
+ 
+-    return jsonify({"detections": bbox_list})
++    capture_status, _capture_error = training_capture_spool.publish(training_capture, bbox_list)
++    response = jsonify({"detections": bbox_list})
++    response.headers['X-Frame-Id'] = training_capture['frame_id']
++    response.headers['X-Training-Capture-Status'] = capture_status
++    return response
+ 
+ @app.route('/video_feed/camera')
+ def video_feed_camera():

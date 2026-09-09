@@ -1,0 +1,22 @@
+# Local environments and caches
+.venv-phase1/
+**/__pycache__/
+**/*.pyc
+.pytest_cache/
+
+# Generated or potentially large runtime output
+results/
+data/corpus/*.png
+data/corpus/*.jpg
+data/corpus/*.jpeg
+experiments/**/artifacts/model/
+
+# Secrets and local credentials
+.env
+*.pem
+*.key
+*.pfx
+*.p12
+
+# OpenWiki transient state
+openwiki/.run.json

@@ -1,0 +1,10 @@
+{
+  "base_url": "http://192.168.1.20:5001",
+  "output_root": "C:/Users/Admin/TrainingImages/PowerBoard",
+  "timeout_seconds": 15.0,
+  "idle_poll_seconds": 1.0,
+  "busy_poll_seconds": 0.25,
+  "retry_max_seconds": 10.0,
+  "minimum_free_bytes": 5368709120,
+  "session_name": null
+}
